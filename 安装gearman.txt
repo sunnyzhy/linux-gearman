@@ -1,0 +1,23 @@
+1.下载gearman
+https://launchpad.net/gearmand
+
+2.安装
+$ tar zxvf gearmand-1.1.12.tar.gz
+$ cd gearmand-1.1.12/
+$ ./configure
+$ make
+$ make install
+
+问题及解决方法
+configure: error: could not find boost
+下载boost,www.boost.org
+$ tar -xvjf boost_1_61_0.tar.bz2
+$ cd boost_1_61_0
+$ ./bootstrap.sh
+$ ./bjam
+$ ldconfig
+
+$ apt-cache search boost
+$ apt-get install libboost-dev
+
+
